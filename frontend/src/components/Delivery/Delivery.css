@@ -1,0 +1,43 @@
+.delivery {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #a25454;
+  }
+  
+  .delivery-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .delivery-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .delivery-content {
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
+  
+  .delivery-content h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .delivery-content p {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .delivery-content {
+      font-size: 1em;
+    }
+  
+    .delivery-header h1 {
+      font-size: 2em;
+    }
+  }
+  

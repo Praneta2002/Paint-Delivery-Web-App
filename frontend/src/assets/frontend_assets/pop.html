@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Collection</title>
+    <link rel="stylesheet" href="sculpture.css">
+</head>
+<body>
+<header>
+        <div class="logo">
+            <img src="logo.jpg" alt="KinnArt">KinnArt
+        </div>
+        <nav>
+            <ul>
+                <li><a href="painting.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="acrylic.html"> Acrylic</a>
+                        <a href="sculpture.html">Sculptures</a>
+                        <a href="pzper.html">Paper</a>
+                        <a href="print.html">Prints</a>
+						<a href="contemporary.html">Contemporary artworks</a>
+						<a href="modern.html">Modern Abstract Art Painting</a>
+						<a href="pop.html">Pop Art</a>
+                    </div>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="cart">Cart (0)</a></li>
+                <li><a href="javascript:void(0)" id="loginBtn"><img src="login.jpeg" alt="login"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="container">
+        <h1>Pop Art</h1>
+        <p>Pop art celebrates the ordinary, infusing everyday objects and imagery with vibrant colors and bold strokes, capturing the essence of popular culture with a playful twist.</p>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <input type="text" placeholder="Filter products by name, style, attributes...">
+
+                <div class="filter-section">
+                    <h3>Refine by:</h3>
+                    <p>No filters applied</p>
+
+                    <h4>Product Type</h4>
+                    <ul>
+                        <li><input type="checkbox" id="handmade" name="handmade"><label for="handmade"> Handmade Painting (27030)</label></li>
+                        <li><input type="checkbox" id="printed" name="printed"><label for="printed"> Printed Painting (1704)</label></li>
+                    </ul>
+
+                    <h4>Customizable by Size</h4>
+                    <ul>
+                        <li><input type="checkbox" id="yes" name="yes"><label for="yes"> Yes (1190)</label></li>
+                        <li><input type="checkbox" id="no" name="no"><label for="no"> No (2915)</label></li>
+                    </ul>
+
+                    <h4>Orientation</h4>
+                    <ul>
+                        <li><input type="checkbox" id="horizontal" name="horizontal"><label for="horizontal"> Horizontal (17015)</label></li>
+                        <li><input type="checkbox" id="landscape" name="landscape"><label for="landscape"> Landscape (38)</label></li>
+                        <li><input type="checkbox" id="portrait" name="portrait"><label for="portrait"> Portrait (66)</label></li>
+                        <li><input type="checkbox" id="square" name="square"><label for="square"> Square (4646)</label></li>
+                        <li><input type="checkbox" id="vertical" name="vertical"><label for="vertical"> Vertical (32640)</label></li>
+                    </ul>
+
+                    <h4>Width (Inches)</h4>
+                    <input type="range" min="0" max="100" step="1">
+
+                    <h4>Height (Inches)</h4>
+                    <input type="range" min="0" max="100" step="1">
+
+                    <h4>Price</h4>
+                    <input type="number" placeholder="Min">
+                    <input type="number" placeholder="Max">
+                    <button>Update</button>
+
+                    <h4>Colors</h4>
+                    <ul>
+                        <li><input type="checkbox" id="ink" name="ink"><label for="ink"> Ink (17903)</label></li>
+                        <li><input type="checkbox" id="acrylic" name="acrylic"><label for="acrylic"> Acrylic (11417)</label></li>
+                        <li><input type="checkbox" id="watercolor" name="watercolor"><label for="watercolor"> Watercolor (3651)</label></li>
+                        <li><input type="checkbox" id="oil" name="oil"><label for="oil"> Oil (2652)</label></li>
+                        <li><input type="checkbox" id="mixed" name="mixed"><label for="mixed"> Mixed Media (2340)</label></li>
+                        <li><input type="checkbox" id="pencil" name="pencil"><label for="pencil"> Pencil (488)</label></li>
+                        <li><input type="checkbox" id="poster" name="poster"><label for="poster"> Poster (201)</label></li>
+                        <li><input type="checkbox" id="sketch" name="sketch"><label for="sketch"> Sketch Pen (165)</label></li>
+                        <li><input type="checkbox" id="charcoal" name="charcoal"><label for="charcoal"> Charcoal (158)</label></li>
+                    </ul>
+                </div>
+            </aside>
+<!-- Cart Sidebar -->
+<aside class="cart-sidebar" id="cartSidebar">
+    <span class="close-btn" id="closeCartBtn">&times;</span>
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">₹0</span></p>
+</aside>
+
+            <section class="products">
+                <div class="product-grid">
+                    <!-- Sample Product Card -->
+                    <div class="product-card">
+                        <img src="po1.jpg" alt="Girl’s portrait ">
+                        <p class="product-title">Girl’s portrait </p>
+                        <p class="product-price">₹82,190</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po2.jpg" alt="Tribal Queen">
+                        <p class="product-title">Tribal Queen</p>
+                        <p class="product-price">₹73,221</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po3.jpg" alt="SAHELI ">
+                        <p class="product-title">SAHELI</p>
+                        <p class="product-price">₹35,981</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po4.jpg" alt="Marilyn Monroe">
+                        <p class="product-title">Marilyn Monroe</p>
+                        <p class="product-price">₹66,780</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po5.jpg" alt="Expression ">
+                        <p class="product-title">Expression </p>
+                        <p class="product-price">₹24,621</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po6.jpg" alt="Knife POP ART PORTRAIT">
+                        <p class="product-title">Knife POP ART PORTRAIT</p>
+                        <p class="product-price">₹77,991</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po7.jpg" alt="Pop letters">
+                        <p class="product-title">Pop letters</p>
+                        <p class="product-price">₹70,081</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po8.jpg" alt=" BANJARE   ">
+                        <p class="product-title"> BANJARE  </p>
+                        <p class="product-price">₹83,100</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="p4.jpeg" alt="Popart">
+                        <p class="product-title">Popart</p>
+                        <p class="product-price">₹19,201</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po10.jpg" alt="Beautiful green valley in pop art Abstract style">
+                        <p class="product-title">Beautiful green valley in pop art Abstract style</p>
+                        <p class="product-price">₹99,900</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po11.jpg" alt="My Hair Style">
+                        <p class="product-title">My Hair Style</p>
+                        <p class="product-price">₹70,101</p>
+                        <button>Add to Cart</button>
+                    </div>
+					<div class="product-card">
+                        <img src="po12.jpg" alt="27's CLUB">
+                        <p class="product-title">27's CLUB  </p>
+                        <p class="product-price">₹1,01,666</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <!-- Add more product cards as needed -->
+                </div>
+            </section>
+			<aside class="cart-sidebar" id="cartSidebar">
+                <span class="close-btn" id="closeCartBtn">&times;</span>
+                <h3>Your Cart</h3>
+                <ul id="cart-items"></ul>
+                <p>Total: <span id="cart-total">₹0</span></p>
+            </aside>
+        </div>
+		<!-- <aside class="cart-sidebar" id="cartSidebar"> -->
+    <!-- <span class="close-btn" id="closeCartBtn">&times;</span> -->
+    <!-- <h3>Your Cart</h3> -->
+    <!-- <ul id="cart-items"></ul> -->
+    <!-- <p>Total: <span id="cart-total">₹0</span></p> -->
+<!-- </aside> -->
+
+    </div>
+
+<div id="loginModal" class="modal">
+        <div class="modal-content">
+		<span class="close">&times;</span>
+            <link rel="stylesheet" href="login-sign.css">
+            <div class="form-container">
+                <!-- Login Form -->
+                <div id="loginForm">
+                    <form class="auth-form">
+                        <h2 class="form-title">Log In</h2>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" class="form-input" placeholder="Your Password" autocomplete="off" required>
+                        </div>
+                        <button type="submit" class="btn">Log In</button>
+                        <p class="form-footer">Don't have an account? <a href="si.html" class="link" id="showSignUp">Sign Up</a></p>
+                    </form>
+                </div>
+			</div>
+        </div>
+    </div>
+
+    <script src="pop.js"></script>
+	<script src="local.js"></script>
+	<script src="painting.js"></script>
+</body>
+</html>

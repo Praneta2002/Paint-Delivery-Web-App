@@ -1,0 +1,180 @@
+/* perfectly working, so don't delete */
+/* ProfilePage.css */
+
+/* Container for the entire profile page */
+.profile-page {
+    padding: 30px;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Profile info section */
+.profile-info {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-info label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.profile-info p {
+    margin: 5px 0 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.profile-info input[type="text"],
+.profile-info input[type="email"],
+.profile-info input[type="file"] {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Order history section */
+.order-history {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.order-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.order-history th, .order-history td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.order-history th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.order-history tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Feedback form */
+.feedback-form {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.feedback-form textarea,
+.feedback-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.feedback-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .profile-info input,
+    .feedback-form textarea,
+    .feedback-form input[type="number"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+/* IF ANY ISSUE DELETE THIS CODE */
+/* THIS CODE IS FOR POPDI PODE><)) */
+.popup-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Green background for success */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other elements */
+    font-size: 16px;
+    transition: opacity 0.5s ease-in-out; /* Smooth appearance/disappearance */
+    opacity: 1;
+}
+
+.popup-message.error {
+    background-color: #f44336; /* Red background for errors */
+}

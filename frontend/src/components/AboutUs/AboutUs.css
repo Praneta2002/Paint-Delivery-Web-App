@@ -1,0 +1,60 @@
+.about-us {
+    font-family: Arial, sans-serif;
+    color: #a25454;
+    padding: 20px;
+  }
+  
+  .about-us-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-us-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-header p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .about-us-mission, .about-us-team {
+    margin-bottom: 40px;
+  }
+  
+  .about-us-mission, .about-us-team {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-us-mission img, .about-us-team img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  .mission-text, .team-info {
+    flex: 1;
+  }
+  
+  .about-us-mission h2, .about-us-team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .team-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .team-info {
+    margin-left: 20px;
+  }
+  
+  .about-us-footer {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+  }
+  

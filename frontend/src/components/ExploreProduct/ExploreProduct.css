@@ -1,0 +1,67 @@
+.explore-product{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 30px;
+}
+.explore-product h1{
+    color: #262626;
+    font-weight: 500;
+} 
+.explore-product-text{
+    max-width: 60%;
+    color: #808080;
+}
+.explore-product-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 30px;
+    overflow-x: scroll;
+}
+.explore-product-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-product-list-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.explore-product-list-item p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4w,16px);
+    cursor: pointer;
+}
+.explore-product hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.explore-product-list-item .active{
+    border: 4px solid tomato;
+    padding: 2px;
+}
+.explore-product-list-item img {
+    width: 7.5vw;
+    height: 7.5vw; /* Ensures the height matches the width */
+    min-width: 80px;
+    min-height: 80px; /* Ensures the minimum height matches the minimum width */
+    max-width: 150px; /* Sets a maximum size to prevent images from getting too large */
+    max-height: 150px; /* Ensures the height does not exceed the maximum width */
+    object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
+    cursor: pointer;
+    border-radius: 50%; /* Creates a circular image */
+    transition: 0.2s;
+}
+@media (max-width:1050px){
+    .explore-product-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
